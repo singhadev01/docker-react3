@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  node-app:
+    stdin_open: true
+    restart: always
+    build:
+      context: .
+      dockerfile: C:\Users\ajay_\docker\SG-SECTION-6-PROD-FLOW\frontend-2020\Dockerfile.dev
+    ports:
+      - 3001:3000
+    # - /app/node_modules implies do not map local
+    volumes:
+      - /app/node_modules
+      - .:/app
+
+  tests:
+    build:
+      context: .
+      dockerfile: C:\Users\ajay_\docker\SG-SECTION-6-PROD-FLOW\frontend-2020\Dockerfile.dev
+    volumes:
+      - /app/node_modules
+      - .:/app
+    command: ["yarn", "test"]

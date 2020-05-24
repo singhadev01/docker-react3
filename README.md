@@ -1,5 +1,22 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+BootStrapped added following DIRECTORIES
+
+Directory: C:\Users\ajay\_\docker\SG-SECTION-6-PROD-FLOW\frontend-2020
+
+Mode LastWriteTime Length Name
+
+---
+
+d----- 5/24/2020 11:01 AM node_modules
+d----- 5/24/2020 10:58 AM public
+d----- 5/24/2020 10:58 AM src
+-a---- 5/24/2020 10:57 AM 310 .gitignore
+-a---- 5/24/2020 11:01 AM 131 debug.log
+-a---- 5/24/2020 10:58 AM 749 package.json
+-a---- 5/24/2020 10:58 AM 2884 README.md
+-a---- 5/24/2020 10:58 AM 468872 yarn.lock
+
 ## Available Scripts
 
 In the project directory, you can run:
