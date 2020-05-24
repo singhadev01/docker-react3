@@ -8,7 +8,7 @@ services:
 # -t  for tagging image you can name it anything
 
 before_install:
-  - docker build -t singhadev01/docker-react3 -f Dockerfile.dev .
+  - docker build -t singhadev01/docker-react3 -f DockerFile.Dev .
 
 #
 # series of command to run as part of test suite
