@@ -16,7 +16,7 @@ before_install:
 
 # override default run command with npm run test or yarn test
 script:
-  - docker run -e CI=true singhadev01/docker-react3 yarn test
+  - docker run -e CI=true singhadev01/docker-react3 yarn test -- --coverage
 #
 # travis ci comes up with option to deploy to predefined providers
 # travis ci will zip our code from master branch and push to s3 bucket
