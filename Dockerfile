@@ -1,7 +1,7 @@
 #Use an existing docker image as base  and tag as builder .. 
 # everything below wil be referred as builder
 
-FROM node:alpine as builder
+FROM node:alpine
 
 #Workdir - for copying file to container
 WORKDIR '/app'
@@ -18,7 +18,7 @@ RUN npm run build
 
 FROM nginx
 
-# Expose is needed for EBS AWS to listen on port 80  it WIll map to this port
+# Expose is needed for EBS AWS to listen on port 80  it WIll map to this port on docker
 EXPOSE 80
 # copy build folder from builder phase
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=0 /app/build /usr/share/nginx/html
